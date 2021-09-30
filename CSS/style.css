@@ -29,7 +29,6 @@ body {
   align-items: center;
   background-color: var(--color-5);
   min-height: 100vh;
-  padding: 100px 125px;
 }
 
 .firstContainer {
@@ -78,7 +77,7 @@ body {
 .containerWalters {
   border-radius: 15px;
   height: 350px;
-  width: 305px;
+  width: 300px;
   padding: 35px;
   background-color: var(--color-2);
 }
@@ -106,45 +105,166 @@ body {
   display: flex;
 }
 
-.depJeanette {
+.containerJeanette {
   border-radius: 15px;
   height: 350px;
-  width: 305px;
+  width: 300px;
   padding: 35px;
   background-color: var(--color-4);
   margin: 0 40px 0 0;
 }
 
+.twoImgAndName {
+  display: flex;
+  align-items: center;
+  color: var(--color-3);
+  margin: 0 0 15px 0;
+}
+
+.twoImgAndName p {
+  color: var(--color-5);
+}
+
 .imgJeanette {
   border-radius: 30px;
+  margin: 0 20px 0 0;
   height: 50px;
 }
 
-.depPatrick {
+.depJeanette h2 {
+  margin: 0 0 25px 0;
+}
+
+.depJeanette p {
+  color: var(--color-2);
+  opacity: 0.5;
+}
+
+.containerPatrick {
   border-radius: 15px;
   height: 350px;
   width: 650px;
+  padding: 35px;
   background-color: var(--color-3);
 }
 
 .imgPatrick {
   border-radius: 30px;
+  margin: 0 20px 0 0;
   height: 50px;
+}
+
+.depPatrick {
+  color: var(--color-4);
+}
+
+.depPatrick h2 {
+  margin: 0 0 25px 0;
+  font-weight: 500;
+}
+
+.depPatrick p {
+  color: var(--color-5);
+  opacity: 0.5;
 }
 
 .thirdContainer {
   display: grid;
 }
 
-.depKira {
+.containerKira {
   border-radius: 15px;
   height: 730px;
-  width: 350px;
+  width: 310px;
+  padding: 35px;
   background-color: var(--color-6);
   margin: 0 0 0 40px;
 }
 
 .imgKira {
   border-radius: 30px;
+  margin: 0 20px 0 0;
   height: 50px;
+}
+
+.depKira {
+  color: var(--color-4);
+}
+
+.depKira h2 {
+  margin: 0 0 25px 0;
+  color: var(--color-3);
+  font-weight: 600;
+}
+
+.depKira p {
+  color: var(--color-2);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1280px) {
+  .mainContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .firstContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerDaniel {
+    height: 650px;
+    width: 350px;
+    margin: 0 40px 20px 0;
+  }
+  .secondContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerPatrick {
+    height: 650px;
+    width: 350px;
+    margin: 0 0 20px 0;
+  }
+  .containerKira {
+    height: 350px;
+    width: 690px;
+    padding: 35px;
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .firstContainer {
+    display: grid;
+    place-content: center;
+  }
+  .secondContainer {
+    display: grid;
+    place-content: center;
+  }
+  .containerDaniel {
+    margin: 0;
+    height: 580px;
+    width: 310px;
+    margin: 50px 0 20px 0;
+  }
+  .containerWalters {
+    width: 310px;
+  }
+  .containerJeanette {
+    margin: 0;
+    width: 310px;
+    margin: 20px 0 20px 0;
+  }
+  .containerPatrick {
+    height: 550px;
+    width: 310px;
+  }
+  .containerKira {
+    height: 640px;
+    width: 310px;
+  }
 }
